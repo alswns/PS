@@ -2,9 +2,6 @@ import sys
 n=int(sys.stdin.readline().rstrip())
 
 data_set=set()
-a=set()
-for i in range(1,21):
-    a.add(i)
 
 for _ in range(n):
     data=sys.stdin.readline().rstrip().split(" ")
@@ -22,13 +19,13 @@ for _ in range(n):
             print("1" if count in data_set else "0")
         elif status=="toggle":
             if count in data_set:
-                data_set.remove(count)
+                data_set.discard(count)
             else:
                 data_set.add(count)
     else:
         status=data[0]
 
         if status=="all":
-            data_set=a
+            data_set=set(list(range(1,21)))
         elif status=="empty":
-            data_set.clear()
+            data_set=set()
