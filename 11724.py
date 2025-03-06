@@ -12,7 +12,8 @@ for _ in range(m):
     link_list[s].append(e)
 
 
-# for i in range()
+for i in range(1,n+1):
+    bfs
 
 
 def bfs(start,link_list):

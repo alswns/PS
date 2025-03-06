@@ -1,5 +1,5 @@
 import sys
-import math
+#브루트포스, 걍 떄려 박치기 하면 됨.
 def input():
     return sys.stdin.readline().rstrip()
 
